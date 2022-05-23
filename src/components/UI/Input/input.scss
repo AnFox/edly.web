@@ -1,0 +1,132 @@
+$fontFamily: 'Open Sans', sans-serif;
+$color: #222B45;
+.input_ui_main {
+    .input_ui_title{
+        font-family: $fontFamily;
+        color: $color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-align: left;
+
+        margin-bottom: 10px;
+    }
+    & > div{
+        text-align: left;
+    }
+}
+.input_ui_input{
+    max-width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C5CEE0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color;
+
+    height: 60px;
+    padding: 0 25px;
+    mix-blend-mode: normal;
+    &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      opacity: 1;
+      color: #8F9BB3;
+    }
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+}
+.input_ui_input_icon{
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.error{
+    border: 1px solid #FF3D71;
+}
+.input_ui_message{
+    margin-top: 1px;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FF3D71;
+    min-height: 24px;
+    text-align: left;
+}
+.input_ui_message_red{
+    color: #FF3D71;
+}
+.input_ui_message_blue{
+    color: #0095FF;
+}
+.input_ui_icon{
+    height: 60px;
+    width: 60px;
+    background: #FFFFFF;
+    border: 1px solid #C5CEE0;
+    border-left: none;
+    box-sizing: border-box;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > svg{
+        margin-right: 15px;
+        cursor: pointer;
+        & > path{
+            transition: all 400ms;
+        }
+        &:hover{
+            & > path{
+                fill: #3366FF;
+            }
+        }
+    }
+}
+.input_ui_box{
+    display: flex;
+    width: auto;
+    & > input{
+        width: 100%;
+    }
+}
+@media all and (max-width: 768px) {
+    .input_ui_title{
+        font-size: 12px;
+    }
+    .input_ui_input{
+        height: 48px;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+    .input_ui_message{
+        font-size: 14px;
+        line-height: 21px;
+        min-height: 21px;
+    }
+    .input_ui_icon{
+        height: 48px;
+        width: 48px;
+    }
+}
+@media all and (max-width: 415px) {
+
+}
+

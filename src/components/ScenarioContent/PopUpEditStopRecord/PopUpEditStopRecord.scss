@@ -1,0 +1,8 @@
+.popup_edit_stop_record {
+  .input_ui_main{
+    padding-bottom: 30px;
+    @media all and (max-width: 768px) {
+      padding-bottom: 20px;
+    }
+  }
+}

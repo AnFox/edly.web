@@ -1,0 +1,125 @@
+$font: Open Sans, sans-serif;
+.landing_header{
+    font-family: $font;
+    height: 68px;
+    background: #FFFFFF;
+    box-shadow: 8px 20px 64px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+}
+.landing_header_nav_menu{
+    width: calc(100% / 12 * 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 400ms;
+}
+.landing_header_nav_menu_logo{
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+}
+.landing_header_nav_menu_href_list{
+    display: flex;
+    align-items: center;
+}
+.landing_header_nav_menu_option{
+    text-decoration: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #222B45;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: all 400ms;
+    &:hover{
+        color: #3366FF;
+    }
+}
+.landing_header_menu_icon{
+    cursor: pointer;
+    display: none;
+    & > path{
+        transition: all 400ms;
+    }
+    &:hover{
+        & > path{
+            fill: #3366FF;
+        }
+    }
+}
+.landing_header_mobile_menu{
+    display: none;
+}
+@media all and (max-width: 1440px){
+    .landing_header_nav_menu{
+        width: calc(100% / 12 * 9);
+    }
+    .landing_header_nav_menu_option{
+        margin-left: 30px;
+    }
+}
+@media all and (max-width: 1000px){
+    .landing_header_nav_menu{
+        width: calc(100% / 12 * 10);
+    }
+}
+@media all and (max-width: 768px){
+    .landing_header_mobile_menu{
+        outline: none;
+        height: 100vh;
+        width: 249px;
+        background-color: #ffffff;
+        display: flex;
+        position: fixed;
+        right: 0;
+        flex-direction: column;
+        transition: all 400ms;
+        align-items: flex-start;
+        
+    }
+    .landing_header_nav_menu_option_right_menu{
+        margin-bottom: 30px;
+    }
+    .landing_header_mobile_menu_close_icon{
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 32px;
+        height: 32px;
+        margin-left: 182px;
+        & > path{
+            transition: all 400ms;
+        }
+        &:hover{
+            & > path{
+                fill: #3366FF;
+            }
+        }
+    }
+    .landing_header{
+        height: 52px;
+    }
+    .landing_header_nav_menu{
+        width: 89.84%;
+    }
+    .landing_header_nav_menu_href_list{
+        display: none;
+    }
+    .landing_header_menu_icon{
+        display: block;
+    }
+}
+@media all and (max-width: 415px){
+    .landing_header_nav_menu{
+        width: calc(100% / 12 * 11);
+    }
+}

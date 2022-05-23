@@ -1,0 +1,20 @@
+.webinar_block_list{
+  .block_label{
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 14px;
+  }
+  .label_load_data{
+    font-size: 14px;
+  }
+  .dropdown_ui_list{
+    padding-top: 40px;
+  }
+  .btn_ui_border{
+    height: 40px;
+    font-size: 16px;
+    & > span{
+      height: 36px;
+    }
+  }
+}

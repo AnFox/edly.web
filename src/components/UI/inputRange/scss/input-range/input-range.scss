@@ -1,0 +1,12 @@
+@import 'input-range-variables';
+@import 'input-range-slider';
+@import 'input-range-label';
+@import 'input-range-label-container';
+@import 'input-range-track';
+
+.input-range {
+  height: 20px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}

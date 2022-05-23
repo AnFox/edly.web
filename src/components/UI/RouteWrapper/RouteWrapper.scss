@@ -1,0 +1,31 @@
+.grid_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  .grid_content{
+    width: calc(100% / 12 * 9);
+    @media all and (max-width: 1024px) {
+      width: calc(100% / 12 * 11);
+    }
+    @media all and (max-width: 1024px) {
+      width: calc(100% / 12 * 11);
+    }
+  }
+  &--menu{
+    padding-left: 255px;
+    @media all and (max-width: 1024px) {
+      padding-left: 0;
+    }
+    .grid_content{
+      width: calc(100% / 12 * 11);
+      @media all and (max-width: 1024px) {
+        width: calc(100% / 12 * 11);
+      }
+    }
+  }
+}
+
+
+

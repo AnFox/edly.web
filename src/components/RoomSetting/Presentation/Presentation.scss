@@ -1,0 +1,194 @@
+$fontFamily: Open Sans, sans-serif;
+.setting_webinar_presentation{
+  color: #222B45;
+  box-sizing: border-box;
+  min-width: 730px;
+  .presentation_btn_ui{
+    margin: 0;
+    height: 40px;
+    font-size: 16px;
+    & > span{
+      height: 36px;
+      .presentation_icon{
+        margin-right: 5px;
+        transform: rotate(180deg);
+        & > path{
+          transition: fill 400ms;
+        }
+      }
+    }
+    &:hover{
+      .presentation_icon{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    min-width: 510px;
+  }
+  @media all and (max-width: 520px) {
+    min-width: 100%;
+  }
+}
+.setting_presentation{
+  color: #222B45;
+  .presentation_btn_ui {
+    margin: 0;
+    .presentation_icon{
+      margin-right: 5px;
+      transform: rotate(180deg);
+      & > path{
+        transition: fill 400ms;
+      }
+    }
+    &:hover{
+      .presentation_icon{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}
+.presentation_empty{
+  margin-top: 30px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: $fontFamily;
+  @media all and (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+.presentation_popup_delete{
+  text-align: left;
+  margin-bottom: 40px;
+  @media all and (max-width: 500px) {
+    margin-bottom: 30px;
+  }
+}
+.presentation_popup_label{
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media all and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.presentation_card{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 10px 40px;
+
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  height: auto;
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+
+  & > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .presentation_card_progress{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .presentation_card_name{
+    height: 24px;
+    margin-right: 10px;
+    font-weight: bold;
+    max-width: 265px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .presentation_card_size{
+    margin-right: 44px;
+  }
+  .presentation_card_gray{
+    color: #8F9BB3;
+    margin-right: 20px;
+  }
+  .presentation_card_delete_icon{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 40px;
+  }
+  @media all and (max-width: 768px) {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 14px;
+    .presentation_card_name{
+      height: 21px;
+    }
+    .presentation_card_delete_icon{
+      right: 30px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    padding: 10px 15px;
+    .presentation_card_delete_icon{
+      right: 10px;
+    }
+  }
+}
+.presentation_popup_add{
+  margin-bottom: 40px;
+  font-family: $fontFamily;
+  @media all and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  .presentation_popup_add_radio_group{
+    margin-bottom: 20px;
+    .presentation_popup_add_radio_group_title{
+      text-align: left;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      @media all and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    .presentation_popup_add_radio_group_button{
+      display: flex;
+      align-items: baseline;
+      margin-top: 10px;
+      .presentation_popup_add_radio_group_button_additional_info{
+        display: block;
+        margin-left: 5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #0095FF;
+        text-align: left;
+        @media all and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

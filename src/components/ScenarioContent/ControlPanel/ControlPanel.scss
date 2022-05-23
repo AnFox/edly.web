@@ -1,0 +1,234 @@
+.scenario_content_control_panel_wrap{
+  width: 240px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  height: fit-content;
+  @media all and (max-width: 650px) {
+    width: 100%;
+  }
+  .scenario_content_control_panel_popup_export{
+    margin-bottom: 40px;
+    @media all and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    & > *{
+    margin-bottom: 10px;
+    }
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+  .scenario_content_control_panel_popup_move{
+    margin-bottom: 40px;
+    @media all and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    .input_ui_main{
+      margin-top: 20px;
+      text-align: left;
+      .input_ui_input{
+        width: 175px;
+        @media all and (max-width: 768px) {
+          width: 150px;
+        }
+      }
+      .input_ui_message{
+        height: auto;
+      }
+    }
+
+  }
+  .scenario_content_control_panel_popup_selected{
+    .scenario_content_popup_selected_commands_inputs{
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 700px;
+      padding-right: 150px;
+      @media all and (max-width: 768px) {
+        width: 100%;
+        padding-right: 50px;
+      }
+      @media all and (max-width: 415px) {
+        padding-right: 0;
+      }
+      .scenario_content_popup_selected_commands_input{
+        width: 175px;
+        @media all and (max-width: 768px) {
+          width: 150px;
+        }
+        @media all and (max-width: 415px) {
+          width: 49%;
+        }
+      }
+    }
+    .scenario_content_popup_selected_commands_checkbox_list{
+      margin-top: 15px;
+      box-sizing: border-box;
+      padding-bottom: 30px;
+      & >*{
+        margin-bottom: 10px;
+      }
+      @media all and (max-width: 768px) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .popup_input_range_subtitle_margin{
+    margin-bottom: 15px;
+  }
+  .scenario_content_control_panel_buttons_show{
+    height: 41px;
+    max-height: 41px;
+    width: 100%;
+    display: none;
+    @media all and (max-width: 650px) {
+      display: flex;
+    }
+    .scenario_content_buttons_content{
+      width: 100%;
+      justify-content: space-between;
+      & > div:nth-child(1){
+        display: flex;
+        align-items: center;
+      }
+    }
+
+  }
+  .scenario_content_control_panel{
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    @media all and (max-width: 768px) {
+      padding: 20px 10px 20px 10px;
+    }
+    @media all and (max-width: 650px) {
+      padding: 20px 0 20px 15px;
+    }
+    .scenario_content_control_panel_main_buttons{
+      display: flex;
+      flex-direction: column;
+
+      padding-bottom: 10px;
+      padding-left: 10px;
+      position: relative;
+      left: -10px;
+      @media all and (max-width: 650px) {
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: space-between;
+      }
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: transparent;
+      }
+
+      & > *{
+        margin-right: 0;
+        justify-content: flex-start;
+        min-width: 197px;
+        width: 197px;
+        flex-shrink: 0;
+        margin-bottom: 15px;
+
+        @media all and (max-width: 768px) {
+          margin-right: 0;
+        }
+        @media all and (max-width: 650px) {
+          min-width: 0;
+          width: fit-content;
+          margin-right: 5px;
+          &:not(.btn_ui_border) {
+            padding: 0 6px;
+          }
+        }
+      }
+    }
+    .scenario_content_control_panel_marked_box{
+      text-align: left;
+      display: flex;
+      align-items: center;
+      .scenario_content_control_panel_marked_reset{
+        cursor: pointer;
+        transition: color 400ms;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        .scenario_icon_black{
+          margin-right: 5px;
+          margin-left: 10px;
+        }
+        &:hover{
+          color: #3366FF;
+          .scenario_icon_black{
+            & > path{
+              fill: #3366FF;
+            }
+          }
+        }
+      }
+    }
+    .scenario_content_control_panel_buttons{
+      display: flex;
+      flex-direction: column;
+      @media all and (max-width: 415px) {
+        flex-direction: row;
+      }
+      .scenario_content_control_panel_buttons_first{
+        margin-right: 20px;
+        & > *{
+          margin-top: 15px;
+          width: 155px;
+        }
+        .scenario_content_delete_command_wrap{
+          position: relative;
+          height: 32px;
+          & > button{
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            svg{
+              transition: all 300ms;
+            }
+          }
+          .scenario_delete_command_options{
+            outline: none;
+            box-sizing: border-box;
+            overflow: hidden;
+            height: auto;
+            z-index: 1;
+            top: 16px;
+            padding-top: 16px;
+            width: 100%;
+            position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+            font-weight: 600;
+            transition: height 400ms;
+            & > *{
+              transition: background-color 400ms;
+              background-color: #FFFFFF;
+              cursor: pointer;
+              box-sizing: border-box;
+              padding: 5px 15px 10px 15px;
+              text-align: left;
+              &:hover{
+                background-color: #F7F9FC;
+              }
+            }
+          }
+        }
+      }
+      .scenario_content_control_panel_buttons_second{
+        margin-right: 20px;
+        & > *{
+          margin-top: 15px;
+          width: 115px;
+        }
+      }
+    }
+  }
+}

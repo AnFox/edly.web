@@ -1,0 +1,45 @@
+.b-alertbar {
+  padding: 12px 12px 12px 24px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 1000;
+
+  &_hidden {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0.3;
+  }
+
+  &_type {
+    &_error {
+      background-color: #d50000;
+    }
+
+    &_info {
+      background-color: #304ffe;
+    }
+
+    &_done {
+      background-color: #00c853;
+    }
+  }
+
+  &__close {
+    margin-left: auto;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__message {
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    padding-right: 24px;
+  }
+}

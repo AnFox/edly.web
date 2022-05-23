@@ -1,0 +1,42 @@
+.back_sticker_button{
+  position: absolute;
+  left: 40px;
+  top: -40px;
+  box-sizing: border-box;
+  background-color: #D9E4FF;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  text-decoration: none;
+  color: #3366FF;
+  height: 40px;
+  transition: background-color 400ms;
+  &:any-link{
+    color: #3366FF;
+  }
+  & > svg{
+    margin-right: 10px;
+    & > path{
+      fill: #3366FF;
+    }
+  }
+  &:hover{
+    background-color: #b7cdff;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 12px;
+    height: 32px;
+    left: 40px;
+    top: -32px;
+  }
+  @media screen and (max-width: 768px) {
+    left: 15px;
+  }
+}

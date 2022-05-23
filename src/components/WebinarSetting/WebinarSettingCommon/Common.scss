@@ -1,0 +1,27 @@
+
+.setting_common_webinar{
+  margin-bottom: 143px;
+  @media all and (max-width: 768px) {
+    margin-bottom: 113px;
+  }
+  @media all and (max-width: 500px) {
+    margin-bottom: 90px;
+  }
+  .input_ui_main{
+    text-align: left;
+  }
+  .setting_common_webinar_date {
+    width: 220px;
+  }
+  .setting_common_webinar__request_toggle{
+    margin: 20px 0 0 0;
+  }
+  .setting_common_webinar__footer{
+    .btn_ui{
+      margin-right: 10px;
+    }
+    .btn_ui_border{
+      margin-left: 0;
+    }
+  }
+}

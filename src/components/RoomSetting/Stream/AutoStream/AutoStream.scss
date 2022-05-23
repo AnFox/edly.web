@@ -1,0 +1,14 @@
+.scenario_popup_delete{
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 40px;
+  @media all and (max-width: 768px) {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .scenario_popup_delete_subtitle{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}

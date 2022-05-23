@@ -1,0 +1,226 @@
+
+.command{
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  align-items: flex-start;
+  cursor: pointer;
+  .command_box{
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 650px) {
+      position: relative;
+    }
+    .command_box_arrow{
+      display: none;
+      position: absolute;
+      @media all and (max-width: 650px) {
+        display: block;
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .command_time{
+      width: 140px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      padding-right: 5px;
+      text-align: right;
+      font-size: 11px;
+      line-height: 150%;
+      font-weight: bold;
+      @media all and (max-width: 650px) {
+        position: absolute;
+        top: -22px;
+        left: 20px;
+      }
+    }
+    .command_type{
+      width: 40px;
+      flex-shrink: 0;
+      height: 40px;
+      background: #FFFFFF;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      .command_type_icon{
+        & > path{
+          fill: #3366FF;
+          transition: all 400ms;
+
+        }
+      }
+    }
+  }
+  .command_info{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 34px 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    border: 1px solid #F7F9FC;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 17px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: -23px;
+      border: 12px solid transparent;
+      border-right: 12px solid #FFFFFF;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+    .command_info_more{
+      position: absolute;
+      outline: none;
+      display: none;
+      z-index: 1;
+      background: #FFFFFF;
+      box-shadow: 4px 16px 32px rgba(0, 0, 0, 0.16);
+      border-radius: 10px;
+      right: 0;
+      top: 37px;
+      width: 210px;
+      font-size: 16px;
+      line-height: 150%;
+      overflow: hidden;
+      font-weight: 600;
+      & > *{
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 10px 20px 10px 20px;
+        background-color: #FFFFFF;
+        transition: background-color 400ms;
+        &:hover{
+          background-color: #F7F9FC;
+        }
+      }
+    }
+    .command_info_menu_icon{
+      cursor: pointer;
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      &:hover{
+        & > path{
+          fill: #3366FF;
+        }
+      }
+      & > path{
+        transition: fill 400ms;
+      }
+      @media all and (max-width: 768px) {
+        right: 0;
+      }
+    }
+    .command_info_go_online{
+      margin-top: 5px;
+      width: 255px;
+      height: 110px;
+      border-radius: 10px;
+      background: url(../../../assets/img/Image_default-background-medium.jpeg) no-repeat;
+      background-size: cover;
+      @media all and (max-width: 1024px) {
+        width: 100%;
+        height: 100px;
+      }
+    }
+    .command_info_presentation_page{
+      margin-top: 5px;
+      width: 255px;
+      height: 181px;
+      background: url(../../../assets/img/Image_default-background-presentation-page-medium.jpg) no-repeat;
+      background-size: cover;
+      @media all and (max-width: 1024px) {
+        width: 100%;
+        height: 170px;
+      }
+    }
+    @media all and (max-width: 768px) {
+      padding: 10px 24px 10px 10px;
+    }
+  }
+  @media all and (max-width: 650px) {
+    margin-top: 33px;
+  }
+}
+
+.command_select{
+
+  .command_info{
+    color: #ffffff;
+    background: #3366FF;
+    &:after{
+      border-right: 12px solid #3366FF;
+    }
+    .command_info_menu_icon{
+      & > path{
+        fill: #ffffff;
+      }
+      &:hover{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+    .command_info_more{
+      color: #222B45;
+    }
+  }
+  .command_box{
+    .command_type{
+      background: #3366FF;
+      .command_type_icon{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+
+}
+
+.command_played{
+
+  .command_info{
+    color: #ffffff;
+    background: #00E096;
+    &:after{
+      border-right: 12px solid #00E096;
+    }
+    .command_info_menu_icon{
+      & > path{
+        fill: #ffffff;
+      }
+      &:hover{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+    .command_info_more{
+      color: #222B45;
+    }
+  }
+  .command_box{
+    .command_type{
+      background: #00E096;
+      .command_type_icon{
+        & > path{
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,90 @@
+.setting_menu_common_buttons{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: 40px 0 0 0;
+  & > .btn_ui{
+    margin: 0 5px 10px 0;
+  }
+  & > .btn_ui_border{
+    margin: 0 0 10px 5px;
+  }
+  .save_setting_icon{
+    height: 48px;
+  }
+  .save_setting_icon_success{
+    width: 48px;
+  }
+  @media all and (max-width: 768px) {
+    .save_setting_icon{
+      height: 40px;
+    }
+    .save_setting_icon_success{
+      width: 40px;
+    }
+  }
+}
+
+
+
+@keyframes change_fill {
+  0% { fill: #FFFFFF;
+        filter: contrast(0.1);
+  }
+  100% { fill: #00E096;
+    filter: contrast(2.0);
+  }
+}
+
+.setting_menu_common_buttons_webinar{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding: 30px 0 0;
+  & > .btn_ui{
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
+  }
+  & > .btn_ui_border{
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    & > span{
+      height: 36px;
+    }
+    margin: 0 0 10px;
+  }
+}
+
+.btn_roll_up{
+  & > span > svg > path{
+    transition: all 400ms;
+  }
+  & > svg > path{
+    transition: all 400ms;
+  }
+  &:hover{
+    & > span > svg > path{
+      fill: #FFFFFF;
+    }
+    & > svg > path{
+      fill: #FFFFFF;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .setting_menu_common_buttons{
+    padding: 30px 0 0 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .setting_menu_common_buttons{
+    flex-wrap: wrap;
+  }
+  .setting_menu_common_buttons_webinar{
+    flex-wrap: wrap;
+  }
+}

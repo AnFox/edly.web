@@ -1,0 +1,6 @@
+[defaults]
+org=illion
+project=edly-web
+
+[auth]
+token=SENTRY_API_TOKEN (see: https://sentry.io/settings/account/api/auth-tokens/)

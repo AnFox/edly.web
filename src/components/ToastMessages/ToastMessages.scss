@@ -1,0 +1,15 @@
+.Toastify__toast-container{
+  width: 600px !important;
+  max-width: 90%;
+  @media all and (max-width: 500px) {
+    width: 100vw !important;
+    max-width: 100%;
+  }
+  .Toastify__toast{
+    border-radius: 10px;
+  }
+  .Toastify__close-button{
+    width: 24px;
+    height: 24px;
+  }
+}

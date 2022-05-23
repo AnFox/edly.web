@@ -1,0 +1,1302 @@
+.edit_webinar{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  .edit_webinar_menu{
+    height: auto;
+    min-height: 67px;
+    display: flex;
+    align-items: flex-end;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: 15px;
+      & > div{
+        box-sizing: border-box;
+        padding-top: 30px;
+        height: 67px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+      }
+    @media all and (max-width: 768px) {
+      min-height: 54px;
+      padding-right: 15px;
+        & > div{
+          height: 54px;
+          padding-top: 20px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+    }
+
+    @media all and (max-width: 500px) {
+      min-height: 54px;
+      padding-right: 30px;
+
+        & > div{
+          height: 34px;
+          padding-top: 10px;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+    }
+  }
+  .edit_webinar_menu_item{
+    cursor: pointer;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    transition: all 400ms;
+    height: 26px;
+    margin-left: 30px;
+    color: #222B45;
+    &:hover{
+      color: #3366FF;
+    }
+    border-radius: 2px;
+    border-bottom: 2px solid #FFFFFF;
+  }
+  .edit_webinar_menu_item_selected{
+    color: #3366FF;
+    border-bottom: 2px solid #3366FF;
+  }
+  .setting_padding{
+    box-sizing: border-box;
+    padding: 40px;
+    @media all and (max-width: 768px) {
+      padding: 30px 30px 20px 30px;
+    }
+    @media all and (max-width: 415px) {
+      padding: 30px 15px 20px 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setting_webinar_padding{
+  box-sizing: border-box;
+  padding: 30px 30px 40px 30px;
+}
+.setting_webinar_input{
+  & > .input_ui_title{
+    text-transform: none;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .input_ui_input {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+  & > .input_ui_message{
+    font-size: 14px;
+    line-height: 150%;
+    height: 21px;
+  }
+}
+.setting_label{
+  font-family: Open Sans, sans-serif;
+  color: #222B45;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.webinar_setting_label{
+  font-size: 14px;
+  text-transform: none;
+}
+@media all and (max-width: 768px) {
+  .setting_webinar_padding{
+    padding: 30px;
+  }
+  .setting_label{
+    font-size: 12px;
+  }
+  .webinar_setting_label{
+    font-size: 14px;
+
+  }
+}
+@media all and (max-width: 415px) {
+  .setting_webinar_padding{
+    padding: 30px 15px 20px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.setting_menu_stream_url_container {
+  width: 100%;
+
+  @media all and (max-width: 500px) {
+    width: 90%;
+  }
+}
+
+.setting_menu_input__stream_url {
+  width: 100% !important;
+}
+
+.window_banner__single_banner{
+  width: calc(100% - 30px);
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.display_none{
+  display: none;
+}
+.window_other_flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.window_banner_first_label_margin{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.setting_menu_label{
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222B45;
+  text-align: left;
+}
+.label_enable_music{
+  margin-left: 12px;
+}
+.close_icon_delete_banner{
+  margin-right: 15px;
+}
+.close_icon_delete_banner:nth-child(1){
+  display: none;
+}
+.window_banner_label_banner{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.window_banner_flex{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.block_ip_list_close_icon_path{
+  transition: all 400ms;
+}
+.block_ip_list_close_icon{
+  cursor: pointer;
+  &:hover{
+    .block_ip_list_close_icon_path{
+      fill: #3366FF;
+    }
+  }
+}
+
+
+.fon_icon{
+  width: 75px;
+  border-radius: 8px;
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+}
+.btn_no_present_icon_path{
+  transition: all 400ms;
+}
+.btn_no_present{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 10px;
+  transition: all 400ms;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222B45;
+  &:hover{
+    color: #3366FF;
+    .btn_no_present_icon_path{
+      fill: #3366FF;
+    }
+  }
+}
+.btn_secondary_setting_options{
+  margin: 0;
+  padding: 0 30px;
+  width: fit-content;
+  height: 40px;
+}
+.setting_menu_date_start_options_two{
+  margin-left: 30px;
+}
+.btn_secondary_margin{
+  margin-left: 20px;
+}
+.window_banner_label_text{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.setting_menu_input_options{
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 20px;
+  height: 40px;
+  min-width: 0;
+}
+.window_banner_input{
+  width: 350px;
+}
+.window_banner_label_href{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.menu_item_line{
+  height: 1px;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #3366FF 0%, #3366FF 51.56%, rgba(51, 102, 255, 0) 100%);
+}
+
+// .edit_room_setting_window_common{
+//     padding-left: 30px;
+//     height: auto;
+//     width: auto;
+//     padding-bottom: 30px;
+//     margin-bottom: 140px;
+//     & > div:nth-child(1){
+//         text-transform: uppercase;
+//     }
+//     & > div:nth-child(5){
+//         & > div{
+//             & > div:first-child{
+//                 text-transform: uppercase;
+//             }
+//         }
+
+//     }
+//     & > div:nth-child(6){
+//         text-transform: uppercase;
+//     }
+//     & > div:nth-child(2){
+//         width: 60%;
+//         & > input{
+//             width: 100%;
+//         }
+//     }
+//     & > div:nth-child(3){
+//         text-transform: uppercase;
+//     }
+//     & > div:nth-child(4){
+//         width: 60%;
+//         & > textarea{
+//             width: 100%;
+//         }
+//     }
+//     & > div:nth-child(5){
+//         & > div:first-child{
+//             & > div:nth-child(2){
+//                 & > input{
+//                     //width: 177px;
+//                 }
+
+//             }
+//         }
+//     }
+//     & > div:nth-child(7){
+//         width: 100%;
+//         & > input{
+//             width: 60%;
+//         }
+//     }
+//     & > div:nth-child(9){
+//         flex-direction: row;
+//         & > button{
+//             margin-right: 30px;
+//         }
+//         & > a{
+//             & > svg{
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+.edit_room_setting_window_stream{
+  padding-left: 30px;
+  padding-right: 30px;
+  height: auto;
+  width: auto;
+  padding-bottom: 30px;
+  margin-bottom: 140px;
+  & > div:nth-child(1){
+    text-transform: uppercase;
+  }
+  // & > div:nth-child(4){
+  //     text-transform: uppercase;
+  // }
+  & > div:nth-child(5){
+    width: 50%;
+    & > div{
+      width: 100%;
+      & > input{
+        width: 100%;
+      }
+    }
+  }
+  & > div:nth-child(4){
+    flex-direction: row;
+    & > button{
+      margin-right: 30px;
+    }
+    & > a{
+      & > svg{
+        display: none;
+      }
+    }
+  }
+}
+.edit_room_setting_window_chat{
+  padding-left: 30px;
+  height: auto;
+  width: auto;
+  padding-bottom: 30px;
+  margin-bottom: 140px;
+  & > div:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    & > div{
+      & > div:first-child{
+        text-transform: uppercase;
+      }
+    }
+  }
+  & > div:nth-child(3){
+    flex-direction: row;
+    & > button{
+      margin-right: 30px;
+    }
+    & > a{
+      & > svg{
+        display: none;
+      }
+    }
+  }
+}
+.admin_header_setting_window_other{
+  height: 695px;
+  width: 610px;
+  margin-left: 30px;
+}
+.edit_room_setting_window_banner{
+  height: auto;
+  width: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 140px;
+  & > div:nth-child(3){
+    flex-direction: row;
+    & > button{
+      margin-right: 30px;
+    }
+    & > a{
+      & > svg{
+        display: none;
+      }
+    }
+  }
+}
+.edit_room_setting_window_other{
+  padding-left: 30px;
+  height: auto;
+  width: auto;
+  padding-bottom: 30px;
+  margin-bottom: 140px;
+  & > div:nth-child(1){
+    & > div:nth-child(2){
+      font-size: 18px;
+
+    }
+  }
+  & > div:nth-child(2){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(3){
+    & > div:nth-child(2){
+      width: 377px;
+      height: 60px;
+    }
+    & > div:nth-child(3){
+      height: 48px;
+    }
+  }
+  & > div:nth-child(5){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(8){
+    display: block;
+    text-transform: uppercase;
+  }
+  & > div:nth-child(9){
+    & > input{
+      width: 45%;
+    }
+  }
+  & > div:nth-child(10){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(11){
+    & > div:nth-child(2){
+      width: 426px;
+      height: 60px;
+    }
+    & > div:nth-child(3){
+      height: 48px;
+    }
+  }
+  & > div:nth-child(12){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(13){
+    width: 50%;
+    & > input{
+      min-width: 0;
+      width: 100%;
+    }
+  }
+  & > div:nth-child(14){
+    width: 50%;
+    & > input{
+      min-width: 0;
+      width: 100%;
+    }
+  }
+  & > div:nth-child(15){
+    flex-direction: row;
+    & > button{
+      margin-right: 30px;
+    }
+    & > a{
+      & > svg{
+        display: none;
+      }
+    }
+  }
+}
+.edit_room__single_banner{
+  width: calc(100% - 30px - 30px);
+  height: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  & > div:nth-child(1){
+    & > div{
+      & > div:nth-child(2){
+        font-size: 18px;
+      }
+    }
+  }
+  & > div:nth-child(2){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(3){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    & > div:first-child{
+      width: 45%;
+    }
+  }
+  & > div:nth-child(4){
+    text-transform: uppercase;
+  }
+  & > div:nth-child(5){
+    & > input{
+      width: 50%;
+    }
+  }
+  & > div:nth-child(6){
+    text-transform: uppercase;
+  }
+}
+
+.setting_menu_label__webinar_description{
+  margin-bottom: 10px;
+}
+
+
+.admin_header_setting_window_chat{
+  height: 309px;
+  width: 770px;
+  padding-left: 30px;
+}
+.edit_room_input{
+  height: 60px;
+  font-size: 18px;
+  line-height: 27px;
+}
+.window_banner_buttons{
+  display: flex;
+
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  flex-direction: row;
+  width: calc(100% - 30px);
+  box-sizing: border-box;
+  & > button{
+    margin-right: 30px;
+  }
+}
+.admin_header_setting_window_banner{
+  width: 770px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.edit_room_choice_fon_banner{
+  background: #FFFFFF;
+  box-shadow: 4px 16px 32px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  width: 730px;
+  height: auto;
+  z-index: 6;
+  position: absolute;
+  display: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+
+}
+.setting_menu_label__type_stream{
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+.setting_menu_date_start_options{
+  display: flex;
+}
+.setting_menu_date_start_options_margin_label{
+  margin-bottom: 10px;
+}
+
+.admin_header_setting_window_stream{
+  height: 400px;
+  width: 770px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.setting_menu_btn_save_change{
+  padding: 0 30px;
+}
+
+.btn_setting_menu_height{
+  height: 40px;
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 14px;
+  margin: 0;
+
+}
+.edit_room_btn_height{
+  height: 48px;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+
+.btn_roll_up{
+  & > span > svg > path{
+    transition: all 400ms;
+  }
+  & > svg > path{
+    transition: all 400ms;
+  }
+  &:hover{
+    & > span > svg > path{
+      fill: #FFFFFF;
+    }
+    & > svg > path{
+      fill: #FFFFFF;
+    }
+  }
+}
+.admin_header_setting_window{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  display: none;
+  z-index: 4;
+}
+.btn_setting_stream_my_streams{
+  margin-left: 0;
+}
+.stream_flex_option{
+  display: flex;
+  flex-wrap: wrap;
+  & > div{
+    margin-bottom: 10px;
+  }
+  & > div:nth-child(1){
+    margin-right: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  .admin_header_setting_window_other{
+    width: 510px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .edit_room_btn_height{
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .edit_room_choice_fon_banner{
+    width: 80%;
+    left: calc(10% - 30px);
+    top: 185px;
+    padding-bottom: 30px;
+  }
+  .edit_room__single_banner{
+    width: calc(100% - 30px - 30px);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    & > div:nth-child(1){
+      & > div{
+        & > div:nth-child(2){
+          font-size: 16px;
+        }
+      }
+    }
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > div:first-child{
+        width: 60%;
+        text-align: center;
+        margin-right: 15px;
+      }
+      & > div:nth-child(2){
+        margin-top: 0;
+      }
+    }
+    & > div:nth-child(5){
+      & > input{
+        width: 70%;
+      }
+    }
+  }
+  .edit_room_setting_window_banner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 110px;
+    & > div:nth-child(2){
+      & > button{
+        margin-right: 20px;
+      }
+      & > a{
+        margin-left: 0;
+        & > svg{
+          display: none;
+        }
+      }
+    }
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > button{
+        margin-right: 20px;
+      }
+      & > a{
+        margin-left: 0;
+        & > svg{
+          display: none;
+        }
+      }
+    }
+  }
+  .btn_stream_option_one{
+    display: none;
+  }
+  .btn_stream_option_two{
+    display: flex;
+    margin-top: 10px;
+  }
+  .admin_header_setting_window_banner{
+    width: 510px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .admin_header_setting_window{
+    top: 70px;
+    left: auto;
+    right: 30px;
+    position: absolute;
+  }
+  .edit_room_setting_window_other{
+    padding-left: 30px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 110px;
+    & > div:nth-child(1){
+      & > div:nth-child(2){
+        font-size: 16px;
+
+      }
+    }
+    & > div:nth-child(3){
+      & > div:nth-child(2){
+        width: 330px;
+        height: 48px;
+      }
+      & > div:nth-child(3){
+        height: 40px;
+      }
+    }
+    & > div:nth-child(9){
+      & > input{
+        width: 65%;
+      }
+    }
+    & > div:nth-child(10){
+      text-transform: uppercase;
+    }
+    & > div:nth-child(11){
+      & > div:nth-child(2){
+        width: 360px;
+        height: 48px;
+      }
+      & > div:nth-child(3){
+        height: 40px;
+      }
+    }
+    & > div:nth-child(13){
+      width: 65%;
+      & > input{
+        min-width: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+      }
+    }
+    & > div:nth-child(14){
+      width: 70%;
+      & > input{
+        min-width: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+      }
+    }
+    & > div:nth-child(15){
+      & > button{
+        margin-right: 20px;
+      }
+    }
+  }
+  .edit_room_input{
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .edit_room_setting_window_chat{
+    padding-left: 30px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 110px;
+    & > div:nth-child(1){
+      display: flex;
+      flex-wrap: wrap;
+    }
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > button{
+        margin-right: 20px;
+      }
+    }
+  }
+  .admin_header_setting_window_chat{
+    width: 510px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .edit_room_setting_window_stream{
+    padding-left: 30px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 110px;
+    & > div:nth-child(5){
+      width: 60%;
+      & > div{
+        width: 100%;
+        & > input{
+          width: 100%;
+        }
+      }
+    }
+    & > div:nth-child(7){
+      & > button{
+        margin-right: 20px;
+      }
+    }
+  }
+  .edit_room_setting_window_common{
+    padding-left: 30px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 110px;
+    & > div:nth-child(2){
+      width: 50%;
+      & > input{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(4){
+      width: 50%;
+      & > textarea{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(5){
+      & > div:first-child{
+        & > div:nth-child(2){
+          & > input{
+            width: 204px;
+          }
+
+        }
+      }
+    }
+    & > div:nth-child(7){
+      width: 100%;
+      & > input{
+        width: 50%;
+      }
+    }
+    & > div:nth-child(9){
+      & > button{
+        margin-right: 20px;
+      }
+    }
+  }
+  .edit_room_setting_window_common_textarea{
+    font-size: 16px;
+    height: 96px;
+  }
+  .admin_header_setting_window_common{
+    width: 510px;
+    padding-bottom: 20px;
+  }
+  .btn_no_present{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .window_other_flex_options{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .window_banner_flex{
+    flex-direction: column;
+  }
+  .btn_secondary_margin{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .admin_header_setting_window_stream{
+    width: 510px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .stream_flex_option{
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 550px) {
+  .admin_header_setting_window{
+    left: 0;
+    right: 30px;
+  }
+}
+@media all and (max-width: 500px) {
+  .btn_setting_stream_my_streams{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .window_banner_buttons{
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+
+  .edit_room_choice_fon_banner{
+    width: 85%;
+    left: calc(7.5% - 15px);
+    top: 185px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+  }
+  .edit_room__single_banner{
+    width: calc(100% - 15px - 15px);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    & > div:nth-child(1){
+      & > div{
+        & > div:nth-child(2){
+          font-size: 16px;
+        }
+      }
+    }
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > div:first-child{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+      }
+      & > div:nth-child(2){
+        margin-top: 0;
+      }
+    }
+    & > div:nth-child(5){
+      & > input{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(7){
+      & > input{
+        width: 100%;
+      }
+    }
+  }
+  .edit_room_setting_window_banner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 90px;
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > button{
+        margin-right: 10px;
+      }
+      & > a{
+        margin-left: 0;
+        margin-top: 0;
+        & > svg{
+          display: none;
+        }
+      }
+    }
+  }
+  .admin_header_setting_window{
+    top: 30px;
+    left: 0;
+    right: 0;
+  }
+  .setting_menu_date_start_options{
+    flex-direction: column;
+  }
+  .setting_menu_date_start_options_two{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .admin_header_setting_window_stream{
+    padding-left: 15px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .admin_header_setting_window_banner{
+    padding-left: 15px;
+    width: calc(100% - 15px);
+  }
+  .admin_header_setting_window_other{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 15px - 15px);
+    height: auto;
+    margin-left: 0;
+  }
+  .edit_room_setting_window_other{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 90px;
+    & > div:nth-child(1){
+      & > div:nth-child(2){
+        font-size: 16px;
+
+      }
+    }
+    & > div:nth-child(3){
+      & > div:nth-child(2){
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+      }
+      & > div:nth-child(3){
+        height: 40px;
+      }
+    }
+    & > div:nth-child(4){
+      width: 100%;
+    }
+    & > div:nth-child(9){
+      & > input{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(10){
+      text-transform: uppercase;
+    }
+    & > div:nth-child(11){
+      & > div:nth-child(2){
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+      }
+      & > div:nth-child(3){
+        height: 40px;
+      }
+    }
+    & > div:nth-child(13){
+      width: 100%;
+      & > input{
+        min-width: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+      }
+    }
+    & > div:nth-child(14){
+      width: 100%;
+      & > input{
+        min-width: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+      }
+    }
+    & > div:nth-child(15){
+      & > button{
+        margin-right: 10px;
+      }
+      & > a{
+        margin-top: 0;
+      }
+    }
+  }
+  .edit_room_setting_window_chat{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+    width: auto;
+    padding-bottom: 15px;
+    margin-bottom: 90px;
+    & > div:nth-child(1){
+      & > div:nth-child(1){
+        & > div:nth-child(2){
+          margin-right: 0;
+          width: calc(100% - 20px);
+        }
+      }
+    }
+    & > div:nth-child(3){
+      flex-direction: row;
+      & > button{
+        margin-right: 10px;
+      }
+      & > a{
+        margin-top: 0;
+      }
+    }
+  }
+  .admin_header_setting_window_chat{
+    padding-left: 15px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .edit_room_setting_window_stream{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 90px;
+    & > div:nth-child(5){
+      width: 100%;
+      & > div{
+        width: 100%;
+        & > input{
+          width: 100%;
+          min-width: 0;
+        }
+      }
+    }
+    & > div:nth-child(4){
+      & > a{
+        margin-top: 0;
+      }
+      & > button{
+        margin-right: 10px;
+      }
+    }
+  }
+  .edit_room_setting_window_common{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 90px;
+    & > div:nth-child(2){
+      width: 100%;
+      & > input{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(4){
+      width: 100%;
+      & > textarea{
+        width: 100%;
+      }
+    }
+    & > div:nth-child(5){
+
+      & > div:first-child{
+        & > div:nth-child(2){
+          & > input{
+            width: 204px;
+          }
+
+        }
+      }
+      & > div:nth-child(2){
+        margin-left: 0;
+      }
+    }
+    & > div:nth-child(7){
+      width: 100%;
+      & > input{
+        min-width: 0;
+        width: 100%;
+      }
+    }
+    & > div:nth-child(9){
+      flex-direction: row;
+      & > button{
+        margin-right: 10px;
+      }
+      & > a{
+        margin-top: 0;
+      }
+    }
+  }
+  .admin_header_setting_window_common{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .window_banner_input{
+    width: 90%;
+  }
+
+  .window_banner__single_banner{
+    width: calc(95% - 30px);
+  }
+  .close_icon_delete_banner{
+    left: 0;
+    bottom: 0;
+  }
+}

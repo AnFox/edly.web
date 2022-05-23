@@ -1,0 +1,2 @@
+export const APP_LOADER_SHOW = 'APP_LOADER_SHOW';
+export const APP_LOADER_HIDE = 'APP_LOADER_HIDE';

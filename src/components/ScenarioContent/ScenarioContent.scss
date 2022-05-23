@@ -1,0 +1,222 @@
+.scenario_content{
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  transition: top 400ms;
+  color: #222B45;
+  top: 0;
+  min-width: fit-content;
+  min-height: 455px;
+  .scenario_content_video_box{
+    @media all and (max-width: 768px) {
+      margin-left: 10px;
+    }
+    @media all and (max-width: 650px) {
+      margin-left: 0;
+    }
+    .scenario_content_video{
+      width: 237px;
+      height: 102px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+      @media all and (max-width: 768px) {
+        width: 217px;
+        height: 93px;
+      }
+      @media all and (max-width: 650px) {
+        width: 100%;
+        height: 154px;
+      }
+    }
+    .scenario_content_video_box_checkbox{
+      margin-top: 15px;
+      align-items: flex-start;
+      @media all and (max-width: 650px) {
+        display: none;
+      }
+      .checkbox_ui_label{
+        font-size: 14px;
+        line-height: 150%;
+        text-align: left;
+      }
+
+    }
+  }
+  .scenario_content_popup_subtitle{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    @media all and (max-width: 768px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .scenario_content_flex{
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 45px);
+    @media all and (max-width: 650px) {
+      flex-direction: column;
+    }
+    .empty_scenario{
+      width: 100%;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      @media all and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media all and (max-width: 768px) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+    .scenario_content_command_list{
+      width: 100%;
+      max-height: 95%;
+      height: 95%;
+      overflow: auto;
+      box-sizing: border-box;
+      padding-right: 20px;
+      @media all and (max-width: 768px) {
+        padding-right: 10px;
+        padding-left: 10px;
+        max-height: 85%;
+      }
+    }
+  }
+  %icon{
+    & > path{
+      transition: fill 400ms;
+    }
+  }
+  .scenario_icon_black{
+    @extend %icon;
+    & > path{
+      fill: #222B45;
+    }
+    &:hover{
+      & > path{
+        fill: #3366FF;
+      }
+    }
+  }
+  %btn_ui_custom{
+    margin: 0;
+    min-width: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .btn_ui_custom{
+    @extend %btn_ui_custom;
+    padding: 0 12px;
+    max-height: 32px;
+  }
+  .btn_ui_border_custom{
+    @extend %btn_ui_custom;
+    max-height: 32px;
+    & > span{
+      width: 100%;
+      padding: 0 12px;
+      max-height: 28px;
+    }
+  }
+  .scenario_content_buttons_content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    & > svg{
+      margin-right: 5px;
+      flex-shrink: 0;
+    }
+  }
+  .scenario_delete_command{
+    justify-content: space-between;
+    path{
+      fill: #ffffff;
+    }
+    & > div:nth-child(1){
+      display: flex;
+      align-items: center;
+      & > svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    padding: 20px 0 20px 0;
+    min-width: 0;
+  }
+  @media all and (max-width: 650px) {
+    padding: 0 0 0 0;
+  }
+  .scenario_content_header{
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-align: left;
+    @media all and (max-width: 650px) {
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .scenario_content_header_back{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: color 300ms;
+      @media all and (max-width: 768px) {
+        margin-left: 5px;
+      }
+      span{
+        font-weight: 600;
+      }
+      path{
+        transition: all 300ms;
+      }
+      &:hover{
+        path{
+          fill: #3366FF;
+        }
+        color: #3366FF;
+      }
+    }
+  }
+  .scenario_content_popup_delete{
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 40px;
+    @media all and (max-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    .scenario_content_control_delete_subtitle{
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+  .scenario_content_popup_timeshift_list{
+    display: flex;
+    .input_ui_input{
+      text-align: center;
+      width: 70px;
+      padding: 0 5px;
+      margin-right: 10px;
+      @media all and (max-width: 768px) {
+        width: 60px;
+      }
+    }
+  }
+}

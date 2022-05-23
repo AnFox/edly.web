@@ -1,0 +1,85 @@
+.sign_in_room_form{
+    margin-bottom: 140px;
+}
+.sign_in_room_checkbox_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.checksign_in_room_checkbox_gridbox_grid > div{
+    text-align: left;
+}
+.sign_in_room_checkbox_grid:first-child{
+    top: 0;
+}
+.sign_in_room_title_margin{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.title_lead{
+    margin-bottom: 10px;
+}
+.title_left{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 350px;
+}
+.title_data{
+    margin-bottom: 30px;
+}
+.input_margin{
+    margin-bottom: 30px;
+}
+.margin_line{
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.sign_in_room_margin{
+    margin-bottom: 40px;
+}
+.sign_in_room_checkbox_margin{
+    margin-right: 10px;
+    font-size: 18px;
+}
+@media all and (max-width: 768px) {
+    .sign_in_room_form{
+        margin-bottom: 113px;
+    }
+    .sign_in_room_title_margin{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    .title_left{
+        max-width: 330px;
+    }
+    .sign_in_room_checkbox_grid{
+        max-width: 330px;
+        text-align: left;
+    }
+    .sign_in_room_checkbox_margin{
+        margin-right: 5px;
+    }
+}
+@media all and (max-width: 417px) {
+    .sign_in_room_form{
+        margin-bottom: 90px;
+    }
+    .sign_in_room_title_margin{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .sign_in_room_checkbox_grid{
+      padding-left: 0;
+    }
+    .title_left {
+        max-width: 210px;
+        margin-left: 0;
+    }
+    .margin_line{
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+}

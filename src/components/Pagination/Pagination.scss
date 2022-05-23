@@ -1,0 +1,125 @@
+$fontFamily: Open Sans, sans-serif;
+.pagination{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    user-select: none;
+}
+.pagination_nav{
+    display: flex;
+    list-style: none;
+    & > li > button{
+        padding: 0;
+        user-select: none;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        
+    }
+}
+.pagination_nav_list{
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    .pagination_text{
+        font-weight: 600;
+    }
+    .selected{
+        color: #3366FF;
+    }
+    .number{
+        cursor: pointer;
+        transition: all 400ms;
+        &:hover{
+            color: #3366FF;
+        }
+    }
+}
+.pagination_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #222B45;
+}
+.pagination_nav_list_single{
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.pagination_per_page{
+    position: relative;
+    display: flex;
+    .pagination_icon{
+        margin-left: 10px;
+    }
+}
+.pagination_per_page_dropdown_list{
+    outline: none;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 4px 16px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    width: 61px;
+    right: 10px;
+    top: 24px;
+}
+.pagination_per_page_dropdown_list_single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    font-family: $fontFamily;
+    font-size: 18px;
+    line-height: 150%;
+    color: #222B45;
+    cursor: pointer;
+    transition: all 400ms;
+    &:hover{
+        background-color: #F7F9FC;
+    }
+    &:nth-child(1){
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    &:nth-last-child(1){
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+.pagination_icon{
+    cursor: pointer;
+    & > path{
+        transition: all 400ms;
+    }
+    &:hover{
+        & > path{
+            fill: #3366FF;
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    .pagination_text{
+        font-size: 14px;
+    }
+    .pagination_per_page_dropdown_list_single{
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 415px) {
+    .pagination{
+        flex-direction: column;
+    }
+    .pagination_per_page{
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    .pagination_nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,240 @@
+.reg_from_in_webinar {
+  background-image: url('../../assets/svg/register-webinar-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  .grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .grid_container {
+      width: 730px;
+      position: relative;
+      @media screen and (max-width: 768px) {
+        width: calc(100% / 12 * 8);
+      }
+      @media screen and (max-width: 415px) {
+        width: calc(100% / 12 * 11);
+      }
+      .logo {
+        position: absolute;
+        left: 0;
+        top: 7px;
+        font-family: Open Sans, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 150%;
+        color: #222b45;
+      }
+    }
+  }
+}
+.reg_in_webinar_form{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 143px;
+  font-family: Open Sans, sans-serif;
+  color: #222B45;
+  background-color: #FFFFFF;
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    margin-bottom: 113px;
+  }
+  @media screen and (max-width: 415px) {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+  .webinar_image{
+    height: 312px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    @media screen and (max-width: 768px) {
+      height: 218px;
+    }
+    @media screen and (max-width: 415px) {
+      height: 142px;
+    }
+  }
+  .reg_in_webinar_form_deck{
+    box-sizing: border-box;
+    padding: 20px 40px 25px 40px;
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      padding: 10px 30px 15px 30px;
+    }
+    @media screen and (max-width: 415px) {
+      padding: 10px 15px 15px 15px;
+    }
+    .webinar_name{
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 150%;
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+      }
+      @media screen and (max-width: 415px) {
+        font-size: 24px;
+      }
+    }
+    .start{
+      margin-top: 15px;
+      margin-bottom: 5px;
+      @media screen and (max-width: 768px) {
+        margin-top: 10px;
+      }
+      @media screen and (max-width: 415px) {
+        margin-top: 5px;
+      }
+    }
+    .webinar_date{
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .webinar_description{
+      font-weight: normal;
+      white-space: pre-line;
+      font-size: 18px;
+      line-height: 150%;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 415px) {
+        margin-top: 10px;
+      }
+    }
+    .deck_input{
+      width: 350px;
+      @media screen and (max-width: 768px) {
+        width: 330px;
+        max-width: 100%;
+      }
+      @media screen and (max-width: 415px) {
+        width: 100%;
+      }
+    }
+    .deck_checkbox{
+      .checkbox_ui_main{
+        align-items: flex-start;
+        margin-bottom: 15px;
+        &:nth-last-child(1){
+          margin-bottom: 30px;
+        }
+      }
+      .label{
+        font-size: 12px;
+        line-height: 150%;
+      }
+      .href{
+        font-size: 12px;
+        line-height: 150%;
+      }
+    }
+    .deck_buttons_list{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      & > *{
+        margin-bottom: 15px;
+      }
+      .btn_ui{
+        margin-left: 0;
+        margin-right: 20px;
+      }
+      .toggle_button{
+        font-family: Open Sans, sans-serif;
+        cursor: pointer;
+        background: none;
+        text-decoration: underline;
+        border: none;
+        outline: none;
+        transition: color 300ms;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        &:hover{
+          color: #3366FF;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      .button_messenger{
+        cursor: pointer;
+        height: 60px;
+        width: 205px;
+        box-sizing: border-box;
+        border: 0;
+        padding: 0;
+        outline: none;
+        margin-right: 10px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 300ms;
+        font-family: Open Sans, sans-serif;
+        & > svg{
+          margin-right: 10px;
+          & > *{
+            fill: white;
+            & > *{
+              fill: white;
+            }
+          }
+        }
+        @media screen and (max-width: 768px) {
+          border-radius: 24px;
+          height: 48px;
+          width: 191px;
+          font-size: 16px;
+        }
+      }
+    }
+    .telegram{
+      background-color: #0397DF;
+      box-shadow: 0 12px 15px rgba(3, 151, 223, 0.2);
+      &:hover{
+        background-color: #0079b6;
+      }
+      &:disabled{
+        background-color: #0396df8a;
+      }
+    }
+    .whatsapp{
+      background: #46E362;
+      box-shadow: 0 12px 15px rgba(70, 227, 98, 0.2);
+      &:hover{
+        background-color: #37b64e;
+      }
+      &:disabled{
+        background-color: #46e3638a;
+      }
+    }
+    .viber{
+      background-color: #705DEB;
+      box-shadow: 0 12px 15px rgba(112, 93, 235, 0.2);
+      &:hover{
+        background-color: #5f4fc2;
+      }
+      &:disabled{
+        background-color: #705deb88;
+      }
+    }
+  }
+}

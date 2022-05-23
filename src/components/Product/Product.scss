@@ -1,0 +1,128 @@
+.product_page{
+    margin-bottom: 143px;
+
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    /* or 150% */
+
+    text-align: center;
+
+    color: #222B45;
+    transition: all 400ms;
+}
+.product_page_title{
+    margin-top: 94px;
+    margin-bottom: 40px;
+    line-height: 150%;
+    font-size: 36px;
+    font-weight: bold;
+}
+.product_page_description{
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    font-size: 18px;
+}
+.product_page_description_line{
+    text-align: left;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+.product_page_get_tariff{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 400ms;
+    &:hover{
+        color: #3366FF;
+    }
+}
+.product_page_get_tariff_circle{
+    background: #FFFFFF;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 12px 15px rgba(51, 102, 255, 0.2);
+    margin-right: 10px;
+    & > svg > path{
+        fill: #3366FF;
+    }
+}
+.product_page_line{
+    height: 1px;
+    width: 540px;
+    background: radial-gradient(50% 50% at 50% 50%, #3366FF 0%, #3366FF 51.56%, rgba(51, 102, 255, 0) 100%);
+    margin: 50px auto 40px auto;
+}
+.product_page_price{
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+@media all and (max-width: 768px) {
+    .product_page{
+        margin-bottom: 113px;
+    }
+    .product_page_title{
+        margin-top: 84px;
+        margin-bottom: 30px;
+        line-height: 150%;
+        font-size: 34px;
+    }
+    .product_page_description{
+        font-size: 16px;
+    }
+    .product_page_description_line{
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+    .product_page_get_tariff{
+        font-size: 16px;
+    }
+    .product_page_line{
+        width: 80%;
+        margin: 30px auto 30px auto;
+    }
+    .product_page_price{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 415px) {
+    .product_page{
+        margin-bottom: 90px;
+    }
+    .product_page_title{
+        margin-top: 74px;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .product_page_get_tariff{
+        flex-direction: column;
+        font-size: 16px;
+        & > div:nth-child(2){
+            width: 70%;
+        }
+    }
+    .product_page_get_tariff_circle{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .product_page_line{
+        width: 100%;
+        margin: 30px auto 20px auto;
+    }
+}

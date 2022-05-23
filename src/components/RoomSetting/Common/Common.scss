@@ -1,0 +1,239 @@
+.setting_webinar_common {
+	width: 610px;
+}
+.setting_common_textarea {
+	resize: none;
+	height: 120px;
+	font-family: Open Sans, sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	padding-top: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 1px solid #c5cee0;
+	box-sizing: border-box;
+	border-radius: 8px;
+	outline: none;
+	width: 50%;
+	min-width: 390px;
+	color: #222B45;
+}
+.setting_webinar_common_textarea {
+	resize: none;
+	height: 120px;
+	font-family: Open Sans, sans-serif;
+	font-size: 16px;
+	line-height: 150%;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #c5cee0;
+	box-sizing: border-box;
+	border-radius: 8px;
+	outline: none;
+	width: 50%;
+	min-width: 350px;
+}
+.setting_webinar__webinar_name {
+	.input_ui_input {
+		min-width: 350px;
+	}
+}
+.setting_webinar_name {
+	margin-bottom: 5px;
+	& > div > input {
+		width: 50%;
+		min-width: 390px;
+	}
+}
+.setting_webinar_dscription {
+	margin-bottom: 8px;
+}
+.setting_textarea_block {
+	margin-bottom: 30px;
+}
+.setting_date_start_options {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.setting_webinar_date_start_options__date_block {
+}
+.webinar_setting_date_start_options__date {
+	width: 230px;
+	margin-right: 30px;
+}
+.setting_date_start_options__date_block {
+	margin-bottom: 20px;
+}
+.setting_date_start_options__date {
+	width: 204px;
+	margin-right: 30px;
+}
+.webinar_setting_date_start_options__time_block {
+	text-align: left;
+	.react-datepicker-popper {
+		display: none;
+	}
+}
+.setting_date_start_options__time_block {
+	margin-bottom: 20px;
+	text-align: left;
+	.react-datepicker-popper {
+		display: none;
+	}
+}
+.webinar_setting_date_start_options__time_block_box {
+	display: flex;
+	.input_ui_input {
+		margin-right: 20px;
+	}
+}
+.webinar_setting_date_start_options__time {
+	width: 65px;
+	height: 40px;
+	text-align: center;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.setting_date_start_options__time {
+	width: 75px;
+	text-align: center;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.webinar_setting_copy_href {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+	& > .btn_ui_border {
+		margin: 0;
+		height: 40px;
+		min-width: 220px;
+		& > span {
+			height: 36px;
+		}
+	}
+}
+.setting_copy_href {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+	& > .btn_ui_border {
+		margin: 0;
+		margin-bottom: 10px;
+		min-width: 220px;
+	}
+}
+.webinar_setting_open_href {
+	min-width: 350px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	.input_ui_input {
+		min-width: 350px;
+	}
+}
+.setting_open_href {
+	margin-right: 30px;
+	width: 50%;
+	min-width: 390px;
+	margin-bottom: 10px;
+}
+.setting_open_href_input {
+	width: 100%;
+	min-width: 390px;
+}
+.setting_webinar_common_textarea {
+	line-height: 150%;
+	padding-top: 5px;
+	resize: none;
+	height: 120px;
+	font-family: Open Sans, sans-serif;
+}
+.webinar_bot_href_list {
+	margin-top: 20px;
+	.webinar_bot_href_list_toggle {
+		margin-bottom: 20px;
+		.toggle_ui_label {
+			text-align: left;
+			text-transform: uppercase;
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 0.5px;
+			@media screen and (max-width: 768px){
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+	}
+	.href_bot_input{
+		width: 546px;
+		@media screen and (max-width: 1024px){
+			width: 390px;
+		}
+		@media all and (max-width: 500px) {
+			width: 100%;
+		}
+	}
+}
+@media all and (max-width: 768px) {
+	.setting_webinar_common {
+		width: 510px;
+	}
+	.setting_common_textarea {
+		height: 100px;
+	}
+}
+@media all and (max-width: 500px) {
+	.setting_webinar_common {
+		width: 100%;
+	}
+	.setting_common_textarea {
+		min-width: 100%;
+	}
+	.setting_webinar_name {
+		margin-bottom: 0;
+		& > div > input {
+			width: 100%;
+			min-width: 100%;
+		}
+	}
+	.setting_open_href {
+		margin-right: 0;
+		width: 100%;
+		min-width: 100%;
+		margin-bottom: 10px;
+	}
+	.setting_open_href_input {
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.webinar_setting_open_href {
+		min-width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+		.input_ui_input {
+			min-width: 100%;
+		}
+	}
+	.setting_webinar_common_textarea {
+		min-width: 100%;
+	}
+	.setting_webinar__webinar_name {
+		.input_ui_input {
+			min-width: 100%;
+		}
+	}
+	.setting_webinar_dscription {
+		margin-bottom: 20px;
+	}
+}

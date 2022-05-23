@@ -1,0 +1,12 @@
+.popup_error_download_script{
+  font-size: 18px;
+  line-height: 150%;
+  color: #222B45;
+  text-align: left;
+  max-width: 90%;
+  margin-bottom: 40px;
+  @media all and (max-width: 768px){
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}

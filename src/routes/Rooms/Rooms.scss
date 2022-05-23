@@ -1,0 +1,11 @@
+.rooms_text_id{
+
+    display: flex;
+    align-items: center;
+    & > span{
+        margin-right: 10px;
+    }
+}
+@media all and (max-width: 768px) {
+
+}

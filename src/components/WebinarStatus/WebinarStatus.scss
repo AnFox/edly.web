@@ -1,0 +1,44 @@
+.webinar_status {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px 0 10px 0;
+
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 0 20px 0 11px;
+  display: flex;
+  align-items: center;
+  .icon {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    & > path {
+      fill: #ffffff;
+    }
+  }
+}
+.yellow {
+  background: linear-gradient(360deg, #ffaa00 0%, #ffc94d 100%);
+}
+.blue {
+  background: linear-gradient(0deg, #0095ff 0%, #42aaff 100%);
+}
+.green {
+  background: linear-gradient(360deg, #00e096 0%, #51f0b0 100%);
+}
+@media all and (max-width: 768px) {
+  .webinar_status {
+    font-size: 12px;
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+  }
+}

@@ -1,0 +1,239 @@
+.fourth_screen{
+    height: auto;
+    width: calc(100% / 12 * 7);
+    font-family: Open Sans, sans-serif;
+    z-index: 2;
+    padding-top: 30px;
+}
+.section_title_fourth{
+    z-index: 1;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.8vw;
+    line-height: 122px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 64px rgba(0, 0, 0, 0.16);
+}
+.fourth_screen_logo_main{
+    display: flex;
+    align-items: flex-end;
+}
+.fourth_screen_logo_human{
+    z-index: 2;
+}
+.fourth_screen_logo_background{
+    background-image: url(../../assets/img/landing-fourth-screen-orange-background.png);
+    height: 264px;
+    min-width: 75%;
+    background-size: cover;
+    background-color: transparent;
+    position: relative;
+    right: 100px;
+    box-shadow: 4px 16px 32px rgba(0, 0, 0, 0.16);
+    border-radius: 40px 0px;
+}
+.fourth_screen_payments{
+    display: flex;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 44px;
+}
+.fourth_screen_payments_option:nth-child(1){
+    margin-left: 80px;
+    min-width: 51%;
+}
+.fourth_screen_payments_option:nth-child(2){
+    margin-left: 135px;
+    min-width: 32%;
+}
+.fourth_screen_payments_option_title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+    color: #222B45;
+}
+.fourth_screen_payments_option_cost{
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: left;
+    color: #3366FF;
+}
+.fourth_screen_payments_option_label{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #222B45;
+}
+.icon-4{
+    background-image: url(../../assets/img/Red_circle.png);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 1533px;
+    margin-top: 550px;
+    z-index: -1;
+}
+.fourth_screen_circle{
+    width: 960px;
+    height: 960px;
+    margin-top: 535px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(180deg, #F7F9FC 0%, rgba(247, 249, 252, 0.25) 100%);
+    z-index: -1;
+    right: 1155px;
+}
+.fourth_screen_logo_background_title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 190px;
+    margin-right: 80px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.fourth_screen_logo_background_label{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 190px;
+    margin-right: 95px;
+}
+@media all and (max-width: 1440px){
+    .fourth_screen{
+        width: calc(100% / 12 * 9);
+    }
+    .section_title_fourth{
+        font-size: 7.5vw;
+    }
+}
+@media all and (max-width: 768px){
+    .fourth_screen{
+        width: 89.84%;
+        padding-top: 0;
+    }
+    .section_title_fourth{
+        font-size: 9vw;
+        line-height: 56px;
+
+        position: relative;
+        top: 30px;
+    }
+    .fourth_screen_logo_main{
+        position: relative;
+        z-index: 2;
+    }
+    .fourth_screen_logo_human{
+        height: 200px;
+    }
+    .fourth_screen_logo_background{
+        height: 170px;
+        min-width: 85%;
+    }
+    .fourth_screen_payments{
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .fourth_screen_logo_background_title{
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 120px;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .fourth_screen_logo_background_label{
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 120px;
+        margin-right: 40px;
+    }
+    .fourth_screen_payments_option:nth-child(1){
+        margin-left: 0;
+        min-width: 57%;
+    }
+    .fourth_screen_payments_option:nth-child(2){
+        margin-left: 30px;
+    }
+    .fourth_screen_payments_option_title{
+        font-size: 25px;
+        line-height: 37px;
+    }
+    .fourth_screen_payments_option_cost{
+        font-size: 25px;
+        line-height: 37px;
+    }
+    .fourth_screen_payments_option_label{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media all and (max-width: 415px){
+    .fourth_screen{
+        width: calc(100% / 12 * 11);
+    }
+    .section_title_fourth{
+        top: 0;
+    }
+    .fourth_screen_logo_main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fourth_screen_logo_background{
+        right: 0;
+        top: -35px;
+        z-index: 3;
+    }
+    .fourth_screen_logo_background_title{
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .fourth_screen_logo_background_label {
+        font-size: 20px;
+        line-height: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fourth_screen_payments{
+        margin-top: 25px;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 54px;
+    }
+    .fourth_screen_payments_option_title{
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .fourth_screen_payments_option_cost {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .fourth_screen_payments_option:nth-child(1){
+        margin-bottom: 40px;
+    }
+    .fourth_screen_payments_option:nth-child(2){
+        margin-left: 0;
+    }
+}

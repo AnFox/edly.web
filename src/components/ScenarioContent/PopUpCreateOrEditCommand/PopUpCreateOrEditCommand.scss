@@ -1,0 +1,25 @@
+.scenario_content_popup_add_room{
+  width: 500px;
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
+  .scenario_content_popup_add_room_error_label{
+    text-align: left;
+    color: #FF3D71;
+  }
+  & > *{
+    margin-bottom: 15px;
+  }
+  & > *:nth-last-child(1){
+    margin-bottom: 0;
+  }
+  .scenario_content_popup_add_room_custom_input{
+    svg{
+      width: 24px;
+      margin-right: -5px;
+      & > path{
+        fill: #8F9BB3;
+      }
+    }
+  }
+}

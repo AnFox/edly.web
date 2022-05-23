@@ -1,0 +1,45 @@
+.ban_title_margin{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.ban_img_margin_height{
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.label_center{
+    width: 350px;
+    margin: auto;
+}
+.ban_form{
+    margin-bottom: 140px;
+}
+@media all and (max-width: 768px) {
+    .ban_form{
+        margin-bottom: 113px;
+    }
+    .ban_img_margin_height{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .ban_title_margin{
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+}
+@media all and (max-width: 417px) {
+    .label_center{
+        width: auto;
+        text-align: center;
+    }
+    .ban_img_margin_height{
+        height: 48px;
+        width: 48px;
+    }
+    .ban_title_margin{
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .ban_form {
+        margin-bottom: 90px;
+    }
+}

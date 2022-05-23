@@ -1,0 +1,105 @@
+.header_main_right_menu{
+  outline: none;
+  position: fixed;
+  right: -800px;
+  transition: all 400ms;
+  top: 0;
+  height: 100vh;
+  background: #FFFFFF;
+  box-shadow: 8px 20px 64px rgba(0, 0, 0, 0.16);
+  width: 270px;
+  z-index: 4;
+}
+.selected{
+  right: 0;
+}
+.header_main_right_menu_content{
+  padding-left: 30px;
+  & > button{
+    margin: 0;
+  }
+}
+.header_main_right_menu_content_header{
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: space-between;
+  width: 233px;
+  & > div:nth-child(1){
+    font-weight: bold;
+  }
+}
+
+
+.header_main_right_menu_content_link_list{
+  display: none;
+  & > a{
+    margin-bottom: 30px;
+  }
+  & > div{
+    margin-bottom: 30px;
+  }
+}
+.header_main_area_nav_menu_option{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: all 400ms;
+  &:hover{
+    color: #3366FF;
+    & > svg > path{
+      fill: #3366FF;
+    }
+  }
+  & > svg{
+    margin-right: 10px;
+  }
+  &:nth-child(1){
+    margin-right: 40px;
+  }
+  &--out{
+    margin-bottom: 20px;
+  }
+  &--rooms{
+    margin-bottom: 20px;
+  }
+}
+.header_main_area_nav_menu_icon{
+  & > path{
+    transition: all 400ms;
+  }
+  &:hover{
+    & > path{
+      fill: #3366FF;
+    }
+  }
+}
+.header_main_right_menu_line{
+  width: 249px;
+  height: 1px;
+  position: relative;
+  left: -15px;
+  background: radial-gradient(50% 50% at 50% 50%, #3366FF 0%, #3366FF 87.5%, rgba(51, 102, 255, 0) 100%);
+}
+.header_main_area_nav_menu_balance_right_menu{
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.header_main_right_menu_link{
+  margin-top: 20px;
+  &:last-of-type{
+    margin-bottom: 20px;
+  }
+}
+.header_main_area_nav_menu_option_selected{
+  color: #3366FF !important;
+  & > svg > path{
+    fill: #3366FF;
+  }
+}
+@media all and (max-width: 900px) {
+
+}

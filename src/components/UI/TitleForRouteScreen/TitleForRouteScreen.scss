@@ -1,0 +1,23 @@
+.title_ui{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+  color: #222B45;
+  margin: 50px 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  transition: height 400ms, margin 400ms;
+  @media all and (max-width: 768px) {
+    font-size: 26px;
+    margin: 40px 0;
+  }
+  @media all and (max-width: 415px) {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+}

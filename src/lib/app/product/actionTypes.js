@@ -1,0 +1,1 @@
+export const APP_PRODUCT_GET = 'APP_PRODUCT_GET';

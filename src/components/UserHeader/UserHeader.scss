@@ -1,0 +1,21 @@
+
+.room_header_user{
+    display: flex;
+    justify-content: space-between;
+    .webinar_header_title{
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .room_header_user{
+        display: flex;
+        .webinar_header_title{
+            margin-left: 10%;
+            width: 70%;
+        }
+        & > a:nth-child(1){
+            display: none;
+        }
+    }
+}

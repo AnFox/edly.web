@@ -1,0 +1,215 @@
+body {
+  background-color: #F7F9FC;
+}
+.input_text{
+  height: 60px;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 1px solid #C5CEE0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #222B45;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  min-width: 350px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: auto;
+}
+.input_text::placeholder{
+  color: #8F9BB3;
+}
+.label_bottom_info{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0095FF;
+  text-align: center;
+}
+.label{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+color: #222B45;
+}
+.title_auth{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  color: #222B45;
+}
+.input_chekbox > span{
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+color: #222B45;
+}
+.input_icon{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 350px;
+  margin: auto;
+}
+.input_icon > input{
+  min-width: auto;
+  width: 100%;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-left: 8%;
+}
+.input_eye_icon{
+
+  border: 1px solid #C5CEE0;
+  border-left: none;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_eye_icon > svg{
+  cursor: pointer;
+}
+.authform_line{
+  margin: auto;
+  width: 200px;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background: radial-gradient(50% 50% at 50% 50%, #3366FF 0%, #3366FF 51.56%, rgba(51, 102, 255, 0) 100%);
+}
+.authform_social_icons{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.authform_social_icons > img{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.href{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #222B45;
+  transition: all 400ms;
+  &:hover{
+    color: #3366FF;
+  }
+}
+.error_message{
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 24px;
+  text-align: left;
+  color: #FF3D71;
+  margin-bottom: 5px;
+  margin-left: calc((100% - 350px) / 2);
+}
+.btn_up{
+  cursor: pointer;
+  position: relative;
+  top: 92px;
+  float: right;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #C5CEE0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.05);
+    &:hover{
+      background: #3366FF;
+    }
+}
+.btn_up_mobile{
+  display: none;
+}
+.input_error{
+  border: 1px solid #FF3D71;
+}
+@media all and (max-width: 768px) {
+  .error_message{
+    font-size: 14px;
+    line-height: 21px;
+    min-height: 21px;
+    margin-bottom: 8px;
+    margin-left: calc((100% - 330px) / 2);
+  }
+  .href{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .input_icon{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 330px;
+  }
+  .input_text{
+    min-width: 330px;
+    height: 48px;
+  }
+  .title_auth{
+    font-size: 34px;
+    line-height: 51px;
+  }
+  .label{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .label_bottom_info{
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media all and (max-width: 417px) {
+  .error_message{
+    margin-left: calc((100% - 290px) / 2);
+  }
+  .input_icon{
+    width: 100%;
+  }
+  .input_text{
+    min-width: 290px;
+    width: 100%;
+  }
+  .btn_up{
+    float: none;
+    left: 82%;
+    top: 80px;
+  }
+  .title_auth{
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .label{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn_up_mobile{
+    display: flex;
+}
+}

@@ -1,0 +1,32 @@
+.scenario_route{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .scenario_title{
+    margin: 25px 0;
+  }
+  .scenario{
+    width: 100%;
+    //width: calc(100% / 12 * 7);
+    //@media all and (max-width: 1366px) {
+    //  width: calc(100% / 12 * 9);
+    //}
+    //@media all and (max-width: 1024px) {
+    //  width: calc(100% / 12 * 11);
+    //
+    //}
+    //@media all and (max-width: 415px) {
+    //  width: calc(100% / 12 * 12);
+    //
+    //}
+  }
+}
+.scenario_route_footer{
+
+  height: fit-content;
+  min-height: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}

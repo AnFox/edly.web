@@ -1,0 +1,305 @@
+.checkbox_grid{
+  display: grid;
+  grid-template-columns: 30px auto;
+  max-width: 450px;
+  margin: auto;
+  padding-left: 6rem;
+}
+.checkbox_grid > div{
+  text-align: left;
+}
+.checkbox_grid:first-child{
+  top: 0;
+}
+.title_margin{
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.label_one_option{
+  margin-bottom: 20px;
+}
+.label_two_option{
+  margin-bottom: 40px;
+}
+.register_button_option{
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 40px;
+}
+.title_success_options{
+  margin-top: 70px;
+}
+.image_success_options{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.label_one_success_option{
+  margin-bottom: 20px;
+}
+.label_two_success_option{
+  margin-bottom: 70px;
+}
+.button_success_options{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.registration_form_options{
+  margin-bottom: 140px;
+  .btn_ui{
+    width: 260px;
+    min-width: fit-content;
+  }
+  @media all and (max-width: 768px) {
+    margin-bottom: 113px;
+    .btn_ui{
+      width: 220px;
+    }
+  }
+  @media all and (max-width: 415px) {
+    margin-bottom: 90px;
+    .btn_ui{
+      width: 210px;
+    }
+  }
+  .registration_form_link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    @media all and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .disabled {
+    opacity: 0.5;
+  }
+}
+.reg_checkbox{
+  margin-right: 10px;
+  font-size: 18px;
+}
+.reg_label_three{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.registration_form_options_subtitle{
+  text-align: left;
+  max-width: 450px;
+  margin: auto;
+  padding-left: 6rem;
+
+  margin-bottom: 50px;
+
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #222B45;
+  word-wrap: break-word;
+  & > pre{
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #222B45;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+.input_options_register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  .input_ui_input{
+    min-width: 350px;
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::placeholder {
+      opacity: 1;
+      color: #8F9BB3;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+  .input_ui_message{
+    min-width: 350px;
+    margin-bottom: 8px;
+  }
+
+}
+.registration_form_social_networks_list{
+  width: 260px;
+  background: #FFFFFF;
+  box-shadow: 0 12px 15px rgba(51, 102, 255, 0.2);
+  border-radius: 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto 60px;
+
+  & > img{
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  @media all and (max-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media all and (max-width: 415px) {
+    margin-bottom: 40px;
+  }
+}
+.registration_form_subtitle_linking{
+  color: #222B45;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  @media all and (max-width: 768px) {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+.registration_form_line{
+  width: 200px;
+  height: 1px;
+  background: radial-gradient(50% 50% at 50% 50%, #3366ff 0%, #3366ff 51.56%, rgba(51, 102, 255, 0) 100%);
+  margin: 20px auto 10px;
+
+  @media all and (max-width: 768px) {
+    width: 171px;
+  }
+  @media all and (max-width: 415px) {
+    width: 168px;
+  }
+}
+.registration_form_success_repeat_form{
+  color: #0095FF;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 150%;
+  @media all and (max-width: 768px) {
+    font-size: 14px;
+  }
+  .registration_form_success_repeat_form_label{
+    margin-bottom: 11px;
+  }
+  .registration_form_success_repeat_form_refresh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    svg{
+      margin-right: 5px;
+      & > path{
+        fill: #0095FF;
+      }
+    }
+    span{
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}
+.registration_form_balance_img{
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  @media all and (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media all and (max-width: 415px) {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media all and (max-width: 1150px) {
+  .checkbox_grid{
+    padding-left: 3rem;
+  }
+  .registration_form_options_subtitle{
+    padding-left: 3em;
+  }
+}
+@media all and (max-width: 768px) {
+  .input_options_register{
+    .input_ui_input{
+      min-width: 330px;
+    }
+    .input_ui_message{
+      min-width: 330px;
+    }
+  }
+  .registration_form_options_subtitle{
+    margin-bottom: 40px;
+    max-width: 403px;
+    padding-left: 10%;
+    font-size: 16px;
+    & > pre{
+      font-size: 16px;
+    }
+  }
+  .title_margin{
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .checkbox_grid{
+    max-width: 403px;
+    padding-left: 10%;
+  }
+  .reg_line_margin{
+    width: 168px;
+  }
+  .reg_btn_up{
+    top: 60px;
+  }
+}
+@media all and (max-width: 417px) {
+  .input_options_register{
+    & > div:nth-child(1){
+      min-width: 290px;
+      width: 100%;
+    }
+    .input_ui_input{
+      min-width: 290px;
+      width: 100%;
+    }
+    .input_ui_message{
+      min-width: 290px;
+      width: 100%;
+    }
+  }
+  .registration_form_options_subtitle{
+    margin-bottom: 30px;
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .checkbox_grid{
+    padding-left: 0;
+  }
+  .title_margin{
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  .register_button_option{
+    margin-bottom: 30px;
+  }
+  .reg_line_margin{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .reg_label_four{
+    max-width: 180px;
+    margin: auto;
+    line-height: 30px;
+  }
+  .checkbox_grid{
+    padding-left: 0;
+  }
+}
